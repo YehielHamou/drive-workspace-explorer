@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Drive Workspace Explorer</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --text: #1e293b;
+      --muted: #475569;
+      --accent: #0b57d0;
+      --border: #e2e8f0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+    }
+    h1 { font-size: 1.75rem; margin-top: 0; color: var(--accent); }
+    h2 { font-size: 1.15rem; margin-top: 28px; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+    p, li { font-size: 0.95rem; color: var(--muted); }
+    .badge {
+      display: inline-block;
+      background: #e8f0fe;
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+    .highlight-box {
+      background: #f1f5f9;
+      border-left: 4px solid var(--accent);
+      padding: 14px 18px;
+      border-radius: 6px;
+      color: var(--text);
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <span class="badge">Last Updated: November 2026</span>
+    <h1>Privacy Policy — Drive Workspace Explorer</h1>
+    <p class="highlight-box">
+      <strong>Zero-Server Architecture:</strong> Drive Workspace Explorer operates 100% locally inside your web browser. We do not own, operate, or transmit your data to any external or third-party servers.
+    </p>
+
+    <h2>1. Data Accessed</h2>
+    <p>When you sign in with Google, the extension requests access to the Google Drive API (<code>https://www.googleapis.com/auth/drive</code>) solely to:</p>
+    <ul>
+      <li>Display your Google Drive folder and file hierarchy inside the Chrome Side Panel.</li>
+      <li>Perform file management actions explicitly initiated by you (create folder, rename, move, star, trash/restore, and drag-and-drop file upload).</li>
+      <li>Sync the side panel tree with your currently active Google Drive browser tab when you click the Sync button.</li>
+    </ul>
+
+    <h2>2. Data Storage &amp; Retention</h2>
+    <ul>
+      <li><strong>No External Databases:</strong> No file names, file contents, metadata, or personal identifiers are ever collected, logged, or stored outside your device.</li>
+      <li><strong>Local Browser Storage Only:</strong> Expanded folder IDs and UI preferences are stored locally in your browser's <code>localStorage</code> / <code>chrome.storage.local</code> and can be cleared at any time by signing out or uninstalling the extension.</li>
+    </ul>
+
+    <h2>3. Google API Services User Data Policy (Limited Use Compliance)</h2>
+    <p class="highlight-box">
+      Drive Workspace Explorer's use and transfer of information received from Google APIs to any other app will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.
+    </p>
+
+    <h2>4. Data Sharing &amp; Third Parties</h2>
+    <p>We do not sell, rent, share, or transfer user data to any third parties, advertising networks, analytics providers, or AI models.</p>
+
+    <h2>5. Contact</h2>
+    <p>For questions regarding this Privacy Policy, please contact the developer via the Chrome Web Store support tab.</p>
+  </main>
+</body>
+</html>
