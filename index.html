@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drive Workspace Explorer — The 2027 Hierarchical Engine for Google Drive™</title>
+  <meta name="description" content="Experience Google Drive at 0ms. A precision-engineered Material 3 folder tree inside Chrome's native Side Panel. Direct OAuth 2.0, zero external servers.">
+
+  <!-- Google Search Console Verification Placeholder (Replace content value when verifying) -->
+  <meta name="google-site-verification" content="REPLACE_WITH_GOOGLE_SEARCH_CONSOLE_TOKEN">
+
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:title" content="Drive Workspace Explorer — Hierarchical File Tree">
+  <meta property="og:description" content="Navigate folders in 0ms, deep-search your workspace, and drag-and-drop desktop files directly into any Google Drive folder.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yehielhamou.github.io/drive-workspace-explorer/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./landing.css">
+</head>
+<body>
+
+  <!-- Floating Glass Navigation -->
+  <div class="nav-wrapper">
+    <nav class="glass-nav" aria-label="Primary Navigation">
+      <a href="./" class="brand-link">
+        <svg width="26" height="26" viewBox="0 0 128 128" fill="none" aria-hidden="true">
+          <line x1="64" y1="80" x2="64" y2="108" stroke="#4285F4" stroke-width="14" stroke-linecap="round"/>
+          <line x1="28" y1="80" x2="100" y2="80" stroke="#4285F4" stroke-width="17" stroke-linecap="round"/>
+          <line x1="64" y1="22" x2="28" y2="80" stroke="#34A853" stroke-width="17" stroke-linecap="round"/>
+          <line x1="64" y1="22" x2="100" y2="80" stroke="#FBBC04" stroke-width="17" stroke-linecap="round"/>
+          <circle cx="64" cy="22" r="13.5" fill="#FBBC04"/><circle cx="64" cy="22" r="5" fill="#fff"/>
+          <circle cx="28" cy="80" r="13.5" fill="#34A853"/><circle cx="28" cy="80" r="5" fill="#fff"/>
+          <circle cx="100" cy="80" r="13.5" fill="#4285F4"/><circle cx="100" cy="80" r="5" fill="#fff"/>
+          <circle cx="64" cy="108" r="13.5" fill="#EA4335"/><circle cx="64" cy="108" r="5" fill="#fff"/>
+        </svg>
+        <span>Drive Workspace Explorer</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#simulator">Live Demo</a>
+        <a href="#features">Architecture</a>
+        <a href="./privacy-policy.html">Privacy Policy</a>
+        <a href="./terms.html">Terms</a>
+      </div>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" type="button" title="Toggle Light/Dark Mode" aria-label="Toggle theme">
+          ◐
+        </button>
+        <a href="https://chrome.google.com/webstore" class="btn-pill-primary js-store-link">
+          Add to Chrome
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="release-pill">
+      <span class="pulse-dot"></span>
+      <span>MANIFEST V3 · DIRECT OAUTH 2.0 · ZERO EXTERNAL SERVERS</span>
+    </div>
+
+    <h1 class="hero-title">
+      Google Drive.<br>
+      <span class="hero-gradient-text">At the speed of thought.</span>
+    </h1>
+
+    <p class="hero-subtitle">
+      The precision-crafted Material 3 hierarchical file tree for Google Drive™. Navigate nested folders in 0ms, switch accounts seamlessly, and drop desktop files straight into any branch.
+    </p>
+
+    <div class="hero-cta-row">
+      <a href="https://chrome.google.com/webstore" class="btn-pill-primary btn-hero-lg js-store-link">
+        Add to Chrome — It's Free
+      </a>
+      <a href="./privacy-policy.html" class="btn-hero-secondary">
+        Read Zero-Server Security Spec
+      </a>
+    </div>
+
+    <!-- Live Interactive Side-Panel Simulator -->
+    <div id="simulator" class="simulator-frame" aria-label="Interactive Extension Simulator">
+      <div class="browser-chrome-bar">
+        <div class="window-dots">
+          <span class="window-dot dot-red"></span>
+          <span class="window-dot dot-yellow"></span>
+          <span class="window-dot dot-green"></span>
+        </div>
+        <span class="browser-url-pill">https://drive.google.com/drive/my-drive</span>
+        <span class="sim-hint-text">Interactive Preview — Click folders &amp; search ↓</span>
+      </div>
+
+      <div class="simulator-split">
+        <div class="sim-main-workspace">
+          <div>
+            <div class="sim-preview-label">Active Workspace Telemetry</div>
+            <h2 class="sim-workspace-heading">Instant Hierarchy Inspection</h2>
+            <p class="sim-workspace-desc">
+              Click any folder or file inside the Side Panel on the right to test 0ms memory-cached tree expansion and live filtering.
+            </p>
+            <div class="sim-active-file-card">
+              <div class="sim-preview-label">Selected Node</div>
+              <h3 id="sim-selected-title" class="sim-active-file-title">📁 Product Launch 2027</h3>
+              <div id="sim-selected-meta" class="sim-active-file-meta">ID: 1x0h_xHWYZJpU9OR · Engine: Chrome_OAuth2_v3 · Latency: 0.2ms</div>
+            </div>
+          </div>
+
+          <div class="sim-telemetry-grid">
+            <div class="sim-stat-box">
+              <div class="sim-stat-val">0 ms</div>
+              <div class="sim-stat-lbl">Cached Tree Toggle</div>
+            </div>
+            <div class="sim-stat-box">
+              <div class="sim-stat-val">100%</div>
+              <div class="sim-stat-lbl">Client-Side Direct</div>
+            </div>
+            <div class="sim-stat-box">
+              <div class="sim-stat-val">250 MB</div>
+              <div class="sim-stat-lbl">Drag &amp; Drop Upload</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Simulated Extension Side Panel -->
+        <aside class="sim-sidepanel">
+          <div class="sim-sp-header">
+            <div class="sim-view-tabs">
+              <button type="button" class="sim-view-btn active" data-view="my-drive">My Drive</button>
+              <button type="button" class="sim-view-btn" data-view="starred">Starred ★</button>
+            </div>
+            <span class="sim-engine-tag">Chrome_OAuth2_v3</span>
+          </div>
+
+          <input id="sim-search-input" type="search" class="sim-search" placeholder="Filter folders &amp; files in real time..." autocomplete="off">
+          <ul id="sim-tree-root" class="sim-tree-list" role="tree"></ul>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <!-- Apple-Style Bento Grid Section -->
+  <section id="features" class="section-container">
+    <div class="section-eyebrow">Engineered for Speed &amp; Privacy</div>
+    <h2 class="section-heading">Built like a native Google Workspace system tool.</h2>
+
+    <div class="bento-grid">
+      <div class="bento-card span-7">
+        <div>
+          <span class="bento-badge">01 · MEMORY-CACHED HIERARCHY</span>
+          <h3>Zero-Latency Folder Expansion</h3>
+          <p>
+            Traditional Google Drive navigation forces a full page reload for every subfolder. Drive Workspace Explorer caches expanded branches in local memory so revisiting any folder takes 0ms.
+          </p>
+        </div>
+        <div class="speed-bars">
+          <div class="speed-bar-row">
+            <span class="speed-label-fast">Drive Workspace Explorer (0.4ms Warm Cache)</span>
+            <div class="bar-fill-fast"></div>
+          </div>
+          <div class="speed-bar-row">
+            <span class="speed-label-slow">Standard Browser Tab Navigation (~2,200ms)</span>
+            <div class="bar-fill-slow"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bento-card span-5">
+        <div>
+          <span class="bento-badge">02 · DESKTOP DRAG &amp; DROP</span>
+          <h3>Drop Files Straight Into Any Branch</h3>
+          <p>
+            Drag files from macOS Finder or Windows Explorer directly onto any folder in the tree. Includes a Material 3 pre-upload confirmation dialog and live byte-stream progress bar.
+          </p>
+        </div>
+        <div class="drop-demo-pill">
+          📄 Keynote_2027.pdf (42.8 MB) ➔ 100% ✓
+        </div>
+      </div>
+
+      <div class="bento-card span-6">
+        <div>
+          <span class="bento-badge">03 · MULTI-ACCOUNT + TAB SYNC</span>
+          <h3>Instant Account Switcher &amp; Tab Sync</h3>
+          <p>
+            Switch between personal and Workspace Google accounts with one click, or press the Target Sync button (🎯) to automatically locate your open Drive tab inside the tree.
+          </p>
+        </div>
+      </div>
+
+      <div class="bento-card span-6">
+        <div>
+          <span class="bento-badge">04 · ZERO-SERVER SECURITY</span>
+          <h3>100% Direct Browser-to-Google OAuth 2.0</h3>
+          <p>
+            Your files, tokens, and metadata never touch an external server. The extension communicates exclusively with <code>googleapis.com</code> over HTTPS.
+          </p>
+        </div>
+        <div>
+          <a href="./privacy-policy.html" class="bento-link">
+            Verify Limited-Use Compliance Policy ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Official Footer -->
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="./">Home</a>
+      <a href="./privacy-policy.html">Privacy Policy</a>
+      <a href="./terms.html">Terms of Service</a>
+      <a href="https://github.com/YehielHamou/drive-workspace-explorer" target="_blank" rel="noopener">GitHub Repository</a>
+    </div>
+    <p>© 2026–2027 Drive Workspace Explorer. Built for Google Chrome™. Google Drive is a trademark of Google LLC.</p>
+  </footer>
+
+  <script src="./landing.js"></script>
+</body>
+</html>
