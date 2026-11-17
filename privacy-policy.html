@@ -83,8 +83,24 @@
     <h2>4. Data Sharing &amp; Third Parties</h2>
     <p>We do not sell, rent, share, or transfer user data to any third parties, advertising networks, analytics providers, or AI models.</p>
 
-    <h2>5. Contact</h2>
-    <p>For questions regarding this Privacy Policy, please contact the developer via the Chrome Web Store support tab.</p>
+    <h2>5. Data Protection &amp; Security Mechanisms</h2>
+    <p>We implement strict technical security procedures and encryption standards to protect the confidentiality, integrity, and security of sensitive Google user data:</p>
+    <ul>
+      <li><strong>Encryption in Transit (HTTPS / TLS 1.2+):</strong> All communication and data transfers between your local Chrome browser and Google Drive API endpoints (<code>https://www.googleapis.com</code>) are strictly encrypted in transit using industry-standard HTTPS / TLS 1.2+ cryptographic protocols.</li>
+      <li><strong>Isolated Browser Sandbox Protection:</strong> All data processing occurs exclusively in volatile memory within Google Chrome's isolated extension execution sandbox (Manifest V3), preventing unauthorized access by web pages or other extensions.</li>
+      <li><strong>Secure OAuth 2.0 Token Management:</strong> Authentication is handled directly by Google Chrome's native <code>chrome.identity</code> API. Drive Workspace Explorer never accesses, logs, or stores your Google Account password, and OAuth access tokens remain protected within the browser's secure credential environment.</li>
+      <li><strong>Zero External Exposure:</strong> Because we operate zero external servers or databases, your sensitive Drive data is never exposed to third-party server breaches, cloud storage leaks, or external network interception.</li>
+    </ul>
+    
+    <h2>6. Data Deletion &amp; Access Revocation</h2>
+    <ul>
+      <li><strong>Local Data Deletion:</strong> Users can immediately delete all locally cached UI preferences and folder state at any time by signing out within the extension or uninstalling Drive Workspace Explorer from Chrome.</li>
+      <li><strong>Revoking Google Account Access:</strong> Users can revoke the extension's OAuth permissions at any time via their <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account Security Permissions page</a>.</li>
+    </ul>
+    
+    <h2>7. Contact</h2>
+    <p>For questions, security inquiries, or data deletion support regarding this Privacy Policy, please contact us at <a href="mailto:balolo4490@gmail.com">balolo4490@gmail.com</a> or via the Chrome Web Store support tab.</p>
+
   </main>
 </body>
 </html>
